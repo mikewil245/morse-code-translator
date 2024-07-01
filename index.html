@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Code Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">Morse Decoder</div>
+      <div class="right-side">
+        <i class="fa-brands fa-github"></i>
+        Github
+      </div>
+    </nav>
+    <header>
+      <h1>Morse Code Translator</h1>
+      <p>
+        It's easy to use Morse Code Translator, translate Morse code to text and
+        text to Morse code.
+      </p>
+    </header>
+    <div class="container">
+      <div class="Morse">
+        <div id="textareaInput">
+          <h2 class="morse-heading">text</h2>
+          <textarea title="text" id="textInput"></textarea>
+        </div>
+        <div class="morse-code" id="morseAreaInput">
+          <h2 class="morse-heading">Morse Code</h2>
+          <textarea title="morse-code" id="morseOutput"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="faq-container">
+      <h1>Morse Code Related FAQ</h1>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What is morse code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Morse Code is a character encoding scheme that allows operators to
+          send messages using a series of electrical pulses represented as short
+          or long pulses, dots, and dashes in other words
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>Who Invented Morse Code and When?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Samuel F. B. Morse and his assistant Alfred Vail are known as the
+          inventors of the Morse code. And Morse code developed in the 1830s
+          then advanced in the 1840s.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What is Morse Code Used For?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          In the past, Morse code had extensive usage, especially in the
+          military. Although Morse code has a limited usage area today, it is
+          still being used in aviation, amateur radio activities, and assistive
+          technology (AT).
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>How to Use Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Morse code can be used in various ways, such as with pen and paper or
+          with the aid of light and sound. Even, it can be used with the parts
+          of the body like eyes or fingers.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>When Was Morse Code Patented?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Samuel Morse received a U.S. patent, US1647A, for dot-dash telegraphy
+          signals on June 20, 1840. On the other hand, some sources claim that
+          Samuel Morse received a patent issued by an Ottoman Sultan, Abdulmejid
+          I, for Morse Code. However, according to Cyrus Hamlin’s memoirs and
+          The New York Times obituary published on April 3, 1872, Samuel Morse
+          received not a patent, but an order of the Ottoman Empire, Order of
+          Glory, instead.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What Was the First Message Sent by Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          “What hath God wrought” is the first official message sent by Samuel
+          F.B. Morse on May 24, 1844, to open the Baltimore - Washington
+          telegraph line.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>How to Read Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          If you are not proficient enough in reading Morse code, you can look
+          up for the corresponding Morse representation of each character from
+          the Morse alphabet table, or you can use Morse code translator.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>How to Translate Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          If you’d like to translate or decipher Morse code and if you do not
+          know how to read Morse code, you can use Morse Code Translator online.
+          With the Morse Decoder, you can decode Morse code and read English
+          text easily. Therefore, you can and end your search for the question
+          of how do you translate Morse code.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What is Morse Code Translator?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Morse Code Translator is a translator that lets anyone translate text
+          to Morse code and decode Morse code to text easily. With the online
+          Morse code translator, anyone can convert any plain text in English or
+          whatever language to Morse code and vice versa.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>How to Use Morse Code Translator?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          Just type in the Morse code or text to the corresponding input fields
+          to use the Morse code converter. For instance, do you remember the
+          Nokia SMS Tone? Try decoding “... -- ...” then playing the audio of
+          it. How about decoding a secret message in Morse or the easter egg you
+          found in a game you played? Well, Morse Code Translator can help you
+          as long as you have an internet connection and the ambition to learn
+          Morse code.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What Does SOS Mean?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">
+          SOS is a distress signal in Morse code, which is internationally
+          recognized worldwide for obtaining help. It was first adopted by the
+          German government in 1905. Although some people think that SOS stands
+          for “Save Our Souls” or “Save Our Ship”, its letters do not stand for
+          anything.
+        </p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What is SOS in Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">SOS in Morse code is “... --- ...”</p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>How to Say Hello in Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">“Hello” in Morse code is “.... . .-.. .-.. ---”</p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>What Does 3 Dots Mean in Morse Code?</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <p class="show hide">Letter S is three dots in Morse code: “...”</p>
+      </div>
+      <div class="morse-question-answer">
+        <div class="header-logo-flex">
+          <p>International Morse Code Rule</p>
+          <div class="open">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="close hidden">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+        <ol type="1" class="show hide">
+          <li>The length of a .(dot) is one unit.</li>
+          <li>A -(dash) is three unit.</li>
+          <li>The space between parts of the same letter is one unit.</li>
+          <li>The space beteween letters is three unit.</li>
+          <li>The space between words is seven unit.</li>
+        </ol>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
